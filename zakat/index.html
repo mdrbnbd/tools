@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="bn"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>জাকাত ক্যালকুলেটর — Zakat Calculator | dFaster Tools</title>
+<meta name="description" content="আজকের স্বর্ণ-রুপার দাম ধরে নিসাব ও ২.৫% হারে জাকাতের হিসাব।">
+<link rel="canonical" href="https://dfaster.com/tools/zakat/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="dFaster Tools"><meta property="og:locale" content="bn_BD">
+<meta property="og:title" content="জাকাত ক্যালকুলেটর — Zakat Calculator | dFaster Tools"><meta property="og:description" content="আজকের স্বর্ণ-রুপার দাম ধরে নিসাব ও ২.৫% হারে জাকাতের হিসাব।"><meta property="og:url" content="https://dfaster.com/tools/zakat/"><meta property="og:image" content="https://dfaster.com/tools/icons/og.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="জাকাত ক্যালকুলেটর — Zakat Calculator | dFaster Tools"><meta name="twitter:description" content="আজকের স্বর্ণ-রুপার দাম ধরে নিসাব ও ২.৫% হারে জাকাতের হিসাব।"><meta name="twitter:image" content="https://dfaster.com/tools/icons/og.png">
+<meta name="theme-color" content="#7c5cff"><meta name="dft-root" content="../">
+<link rel="manifest" href="../manifest.json"><link rel="icon" href="../icons/icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../icons/icon-192.png">
+<link rel="preload" href="../assets/fonts/hind-bengali-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/fonts/fonts.css"><link rel="stylesheet" href="../css/style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277863204170835" crossorigin="anonymous"></script>
+</head><body>
+<a class="skip" href="#main">মূল অংশে যান</a>
+<header class="top"><div class="wrap"><a class="brand" href="../" aria-label="dFaster Tools হোম"><svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset="1" stop-color="#00c2a6"/></linearGradient></defs><rect width="64" height="64" rx="16" fill="url(#lg)"/><path d="M18 18h12a14 14 0 0 1 0 28H18z" fill="none" stroke="#fff" stroke-width="6"/><path d="M38 26h10M38 34h8" stroke="#fff" stroke-width="5" stroke-linecap="round"/></svg><span>dFaster <b>Tools</b></span></a>
+<a class="hdr-link" href="../#all" data-en="Tools">টুলস</a><a class="hdr-link" href="../news/" data-en="News">খবর</a><a class="hdr-link" href="../tutorials/" data-en="Tutorials">টিউটোরিয়াল</a><button class="lang-btn" id="langBtn" type="button" aria-label="Language">EN</button></div></header>
+<div class="wrap"><div class="ad-slot" data-slot="top"></div></div>
+<main id="main" class="wrap"><nav class="crumbs" aria-label="breadcrumb"><a href="../">হোম</a> › <a href="../#cat-calc">হিসাব ও ক্যালকুলেটর</a> › জাকাত ক্যালকুলেটর</nav><h1>🌙 <span data-en="Zakat Calculator">জাকাত ক্যালকুলেটর</span></h1><p class="muted" data-en="Zakat on cash, gold, silver and business assets.">আজকের স্বর্ণ-রুপার দাম ধরে নিসাব ও ২.৫% হারে জাকাতের হিসাব।</p>
+
+<div class="panel"><h2 data-en="Prices (per vori)">দাম (প্রতি ভরি)</h2><div class="row c3">
+<div><label for="goldP" data-en="Gold 22K per vori">স্বর্ণ ২২ ক্যারেট / ভরি (৳)</label><input id="goldP" inputmode="decimal"></div>
+<div><label for="silverP" data-en="Silver 22K per vori">রুপা ২২ ক্যারেট / ভরি (৳)</label><input id="silverP" inputmode="decimal"></div>
+<div><label for="basis" data-en="Nisab basis">নিসাব নির্ধারণ</label><select id="basis"><option value="silver">রুপা (সাড়ে ৫২ ভরি) — বেশি সতর্ক মত</option><option value="gold">স্বর্ণ (সাড়ে ৭ ভরি)</option></select></div>
+</div><div class="note">ডিফল্ট দাম: <span id="zdate"></span> — <a id="zsrc" target="_blank" rel="noopener"></a>। দাম প্রায়ই বদলায়, তাই আজকের দাম বসিয়ে নিন। ১ ভরি = ১১.৬৬৪ গ্রাম।</div>
+<h2 data-en="Your assets">আপনার সম্পদ</h2><div class="row c2">
+<div><label for="cash" data-en="Cash & bank balance">নগদ ও ব্যাংক/মোবাইল ব্যাংকিংয়ের টাকা</label><input id="cash" inputmode="decimal" placeholder="০"></div>
+<div><label for="goldV" data-en="Gold (vori)">স্বর্ণ (ভরি)</label><input id="goldV" inputmode="decimal" placeholder="০"></div>
+<div><label for="silverV" data-en="Silver (vori)">রুপা (ভরি)</label><input id="silverV" inputmode="decimal" placeholder="০"></div>
+<div><label for="biz" data-en="Business stock (sale value)">ব্যবসার পণ্য (বিক্রয়মূল্যে)</label><input id="biz" inputmode="decimal" placeholder="০"></div>
+<div><label for="recv" data-en="Receivable loans">পাওনা টাকা (যা ফেরত পাওয়ার আশা আছে)</label><input id="recv" inputmode="decimal" placeholder="০"></div>
+<div><label for="oth" data-en="Other zakatable assets">অন্যান্য (শেয়ার, সঞ্চয়পত্র ইত্যাদি)</label><input id="oth" inputmode="decimal" placeholder="০"></div>
+<div><label for="debt" data-en="Debts due now">পরিশোধযোগ্য ঋণ (বাদ যাবে)</label><input id="debt" inputmode="decimal" placeholder="০"></div>
+</div><div class="btns"><button class="btn" id="calc" data-en="Calculate">হিসাব করুন</button></div><div id="out"></div>
+<div class="note">এটি সাধারণ হিসাব। ব্যক্তিগত পরিস্থিতিতে (যেমন ব্যবহৃত গয়না, দীর্ঘমেয়াদি ঋণ) মাসআলা ভিন্ন হতে পারে — একজন আলেমের পরামর্শ নিন।</div></div>
+<script>document.addEventListener('DOMContentLoaded',function(){var Z=RATES.zakat,D=DFT;D.$('#zdate').textContent=Z.priceDate;var a=D.$('#zsrc');a.href=Z.sourceUrl;a.textContent=Z.source})</script>
+<a class="tut-link" href="../tutorials/zakat/">📘 <span data-en="How to use this tool (tutorial)">কীভাবে ব্যবহার করবেন — ধাপে ধাপে টিউটোরিয়াল</span> →</a>
+<div class="ad-slot" data-slot="middle"></div>
+<h2 data-en="Related tools">আরও টুল</h2><div class="grid"><a class="card" href="../electricity-bill/"><div class="ic">💡</div><h3 data-en="Electricity Bill Calculator">বিদ্যুৎ বিল ক্যালকুলেটর</h3><p data-en="Monthly residential bill using BERC slab rates.">DESCO, DPDC, পল্লী বিদ্যুৎসহ সব কোম্পানির আবাসিক ধাপভিত্তিক রেটে মাসিক বিল হিসাব করুন।</p></a><a class="card" href="../income-tax/"><div class="ic">🧾</div><h3 data-en="Salary &amp; Income Tax Calculator">বেতন ও আয়কর ক্যালকুলেটর</h3><p data-en="Bangladesh personal income tax for FY 2026-27.">২০২৬-২৭ করবর্ষের স্ল্যাব অনুযায়ী বেতনের আয়কর, বিনিয়োগ রেয়াত ও মাসিক কর হিসাব।</p></a><a class="card" href="../age-calculator/"><div class="ic">🎂</div><h3 data-en="Age Calculator">বয়স ক্যালকুলেটর</h3><p data-en="Exact age on a date and job age-limit check.">নির্দিষ্ট তারিখে আপনার সঠিক বয়স ও চাকরির বয়সসীমা পার হয়েছে কিনা দেখুন।</p></a></div></main>
+<div class="wrap"><div class="ad-slot" data-slot="bottom"></div></div>
+<footer class="foot"><div class="wrap"><nav><a href="../" data-en="Home">হোম</a><a href="../tutorials/" data-en="Tutorials">টিউটোরিয়াল</a><a href="../news/" data-en="News">খবর</a><a href="../about/" data-en="About">আমাদের সম্পর্কে</a><a href="../privacy/" data-en="Privacy Policy">গোপনীয়তা নীতি</a><a href="../contact/" data-en="Contact">যোগাযোগ</a><a href="https://dfaster.com/">dfaster.com</a></nav>
+<div>© <span data-year></span> dFaster Tools · <span class="made"><a href="https://wa.me/8801766119905" target="_blank" rel="noopener">Made by Robin</a></span></div></div></footer>
+<script src="../js/ads-config.js"></script><script src="../js/common.js"></script><script src="../data/rates.js"></script><script src="../js/tools/zakat.js"></script>
+</body></html>
