@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T06:04:20Z",
+ "updated": "2026-11-03T06:06:24Z",
  "sources": [
   {
    "name": "The Business Standard",
@@ -12,13 +12,49 @@
  ],
  "items": [
   {
+   "title": "Bangladesh's Rupantar named finalist for 2027 Zayed Sustainability Prize",
+   "snippet": "Rupantar operates women-owned water enterprises that use reverse osmosis (RO) systems, restored ponds and rainwater harvesting to deliver sustainable water solutions",
+   "link": "https://www.tbsnews.net/bangladesh/bangladeshs-rupantar-named-finalist-2027-zayed-sustainability-prize-1591066",
+   "source": "The Business Standard",
+   "published": "2026-11-03T05:50:00Z",
+   "title_bn": "বাংলাদেশের রূপান্তর 2027 জায়েদ সাসটেইনেবিলিটি পুরস্কারের জন্য চূড়ান্ত মনোনীত হয়েছেন",
+   "snippet_bn": "রূপান্তর মহিলাদের মালিকানাধীন জল উদ্যোগগুলি পরিচালনা করে যেগুলি টেকসই জলের সমাধান সরবরাহ করতে বিপরীত অসমোসিস (RO) সিস্টেম, পুনরুদ্ধার করা পুকুর এবং বৃষ্টির জল সংগ্রহ করে"
+  },
+  {
+   "title": "PM opens first-ever solar expo to boost renewable energy",
+   "snippet": "The expo aims to support the implementation of the National Renewable Energy Development Strategy 2026-2030 and raise awareness among stakeholders about government policies and incentives to expand solar power.",
+   "link": "https://www.tbsnews.net/bangladesh/pm-opens-first-ever-solar-expo-boost-renewable-energy-1591071",
+   "source": "The Business Standard",
+   "published": "2026-11-03T05:50:00Z",
+   "title_bn": "নবায়নযোগ্য শক্তি বৃদ্ধির জন্য প্রথমবারের মতো সোলার এক্সপো উদ্বোধন করলেন প্রধানমন্ত্রী",
+   "snippet_bn": "এই এক্সপোর লক্ষ্য হল জাতীয় পুনর্নবীকরণযোগ্য শক্তি উন্নয়ন কৌশল 2026-2030 বাস্তবায়নে সহায়তা করা এবং সৌর শক্তি সম্প্রসারণের জন্য সরকারী নীতি এবং প্রণোদনা সম্পর্কে স্টেকহোল্ডারদের মধ্যে সচেতনতা বৃদ্ধি করা।"
+  },
+  {
+   "title": "Bangladesh, UAE stress early CEPA to boost trade and investment",
+   "snippet": "UAE investment in Bangladesh's port facilities and reciprocal support in multilateral forums also featured in the talks.",
+   "link": "https://www.tbsnews.net/bangladesh/bangladesh-uae-stress-early-cepa-boost-trade-and-investment-1591061",
+   "source": "The Business Standard",
+   "published": "2026-11-03T05:45:00Z",
+   "title_bn": "বাংলাদেশ, সংযুক্ত আরব আমিরাত বাণিজ্য ও বিনিয়োগ বাড়াতে প্রাথমিক সিইপিএ-র ওপর জোর দেয়",
+   "snippet_bn": "বাংলাদেশের বন্দর সুবিধায় সংযুক্ত আরব আমিরাতের বিনিয়োগ এবং বহুপাক্ষিক ফোরামে পারস্পরিক সহায়তাও আলোচনায় স্থান পেয়েছে।"
+  },
+  {
+   "title": "How money is shaping the record-breaking 2026 US midterm elections",
+   "snippet": "More than $9.5 billion had already been spent during the election cycle, based on Federal Election Commission (FEC) filings through mid-October",
+   "link": "https://www.tbsnews.net/explainer/how-money-shaping-record-breaking-2026-us-midterm-elections-1591056",
+   "source": "The Business Standard",
+   "published": "2026-11-03T05:30:00Z",
+   "title_bn": "2026 সালের মার্কিন মধ্যবর্তী নির্বাচনের রেকর্ড-ব্রেকিং অর্থ কীভাবে রূপ নিচ্ছে",
+   "snippet_bn": "অক্টোবরের মাঝামাঝি ফেডারেল ইলেকশন কমিশন (এফইসি) ফাইলিংয়ের ভিত্তিতে নির্বাচন চক্রের সময় ইতিমধ্যেই $9.5 বিলিয়ন ব্যয় করা হয়েছে"
+  },
+  {
    "title": "US midterm elections test Trump's support as economic pressures weigh on voters",
    "snippet": "The outcome could influence the final two years of Trump's presidency and shape the political landscape ahead of the post-Trump era",
    "link": "https://www.tbsnews.net/worldbiz/usa/us-midterm-elections-test-trumps-support-economic-pressures-weigh-voters-1591036",
    "source": "The Business Standard",
    "published": "2026-11-03T05:25:00Z",
-   "title_bn": "",
-   "snippet_bn": ""
+   "title_bn": "মার্কিন মধ্যবর্তী নির্বাচন ট্রাম্পের সমর্থনকে পরীক্ষা করে কারণ অর্থনৈতিক চাপ ভোটারদের উপর ভর করে",
+   "snippet_bn": "ফলাফল ট্রাম্পের রাষ্ট্রপতির শেষ দুই বছরকে প্রভাবিত করতে পারে এবং ট্রাম্প-পরবর্তী যুগের রাজনৈতিক ল্যান্ডস্কেপকে রূপ দিতে পারে।"
   },
   {
    "title": "Petition to ban TV channel in France gets over 500,000 signatures",
@@ -26,8 +62,8 @@
    "link": "https://www.tbsnews.net/worldbiz/europe/petition-ban-tv-channel-france-gets-over-500000-signatures-1591026",
    "source": "The Business Standard",
    "published": "2026-11-03T05:15:00Z",
-   "title_bn": "",
-   "snippet_bn": ""
+   "title_bn": "ফ্রান্সে টিভি চ্যানেল নিষিদ্ধ করার পিটিশনে 500,000 জনের বেশি স্বাক্ষর রয়েছে",
+   "snippet_bn": "CNews-এর একজন কথিত আগ্রহী দর্শকের দ্বারা গত মাসে একজন কৃষ্ণাঙ্গ ব্যক্তির শুটিংয়ের পর থেকে পিটিশনের পক্ষে সমর্থন বেড়েছে। সমালোচকরা বলছেন যে চ্যানেলটি প্রায়শই ফক্স নিউজের সাথে তুলনা করে, অভিবাসী বিরোধী অনুভূতির জন্য একটি প্ল্যাটফর্ম।"
   },
   {
    "title": "Trump labels Democrats 'dangerous' ahead of midterms",
@@ -35,8 +71,8 @@
    "link": "https://www.tbsnews.net/worldbiz/usa/trump-labels-democrats-dangerous-ahead-midterms-1591021",
    "source": "The Business Standard",
    "published": "2026-11-03T05:10:00Z",
-   "title_bn": "",
-   "snippet_bn": ""
+   "title_bn": "মধ্যবর্তী নির্বাচনের আগে ডেমোক্র্যাটদের 'বিপজ্জনক' বলে আখ্যা দিয়েছেন ট্রাম্প",
+   "snippet_bn": "মার্কিন প্রেসিডেন্ট ডোনাল্ড ট্রাম্প বলেছেন, মধ্যবর্তী নির্বাচনে ডেমোক্র্যাটরা মার্কিন ইতিহাসে \"সবচেয়ে চরম ও বিপজ্জনক\" প্রার্থীকে মনোনীত করেছে। তিনি একজন বর্তমান রাষ্ট্রপতি মধ্যবর্তী মেয়াদে \"জিতবেন না\" বলে প্রত্যাশা কমিয়ে দিয়েছেন।"
   },
   {
    "title": "HSC results put post-July student-teacher relationship under scrutiny",
@@ -44,8 +80,8 @@
    "link": "https://www.tbsnews.net/bangladesh/education/hsc-results-put-post-july-student-teacher-relationship-under-scrutiny-1591031",
    "source": "The Business Standard",
    "published": "2026-11-03T05:10:00Z",
-   "title_bn": "",
-   "snippet_bn": ""
+   "title_bn": "HSC ফলাফল জুলাই-পরবর্তী ছাত্র-শিক্ষক সম্পর্ককে যাচাই-বাছাই করে",
+   "snippet_bn": "কিছু শিক্ষার্থী এখন আনুষ্ঠানিক পড়াশোনা না করে নেতৃত্বের পদে পৌঁছাতে দেখে উচ্চ শিক্ষার মূল্য নিয়ে প্রশ্ন তোলে, তিনি বলেন। রাজনৈতিক প্রভাব, অত্যধিক সোশ্যাল মিডিয়া ব্যবহার, এবং অপরিচিত প্রশ্নের ধরণগুলিও…"
   },
   {
    "title": "Garment workers clash with police in Mirpur",
@@ -53,8 +89,8 @@
    "link": "https://en.prothomalo.com/bangladesh/enrrb5j68c",
    "source": "Prothom Alo English",
    "published": "2026-11-03T05:08:37Z",
-   "title_bn": "",
-   "snippet_bn": ""
+   "title_bn": "রাজধানীর মিরপুরে পুলিশের সঙ্গে পোশাক শ্রমিকদের সংঘর্ষ হয়েছে",
+   "snippet_bn": "রাজধানীর মিরপুরে আজ মঙ্গলবার আবারও রাস্তায় নেমে বিক্ষোভ করেছে পোশাক শ্রমিকরা। শ্রমিক ও পুলিশের মধ্যে সংঘর্ষ বেধে যায়। সকাল সাড়ে ১০টার দিকে শ্রমিকরা মিরপুর-১১ মেট্রো স্টেশনের নিচে জড়ো হয়ে শুরু করে..."
   },
   {
    "title": "Garment workers block Dhaka–Tangail highway in Gazipur; 12 factories declare holiday",
@@ -62,8 +98,8 @@
    "link": "https://en.prothomalo.com/bangladesh/local-news/mk905jega8",
    "source": "Prothom Alo English",
    "published": "2026-11-03T05:08:33Z",
-   "title_bn": "",
-   "snippet_bn": ""
+   "title_bn": "গাজীপুরে ঢাকা-টাঙ্গাইল মহাসড়ক অবরোধ করেছে পোশাক শ্রমিকরা; ১২টি কারখানা ছুটি ঘোষণা করেছে",
+   "snippet_bn": "ন্যূনতম মজুরি ৩০ হাজার টাকায় উন্নীত করার দাবিতে আজ মঙ্গলবার সকাল ৯টা থেকে গাজীপুরের নাওজোর এলাকায় ঢাকা-টাঙ্গাইল মহাসড়ক অবরোধ করে রাখে গার্মেন্টস শ্রমিকরা। গাজীপুর শিল্প পুলিশ জানিয়েছে, জেলায় ১২টি কারখানা…"
   },
   {
    "title": "BTRC proposes 20-year spectrum allocation, revised fees",
@@ -71,17 +107,17 @@
    "link": "https://www.tbsnews.net/bangladesh/btrc-proposes-20-year-spectrum-allocation-revised-fees-1590986",
    "source": "The Business Standard",
    "published": "2026-11-03T05:00:00Z",
-   "title_bn": "",
-   "snippet_bn": ""
+   "title_bn": "বিটিআরসি 20 বছরের স্পেকট্রাম বরাদ্দ, সংশোধিত ফি প্রস্তাব করেছে",
+   "snippet_bn": "ফি সংশোধন স্পেকট্রাম বিক্রয় থেকে সরকারের রাজস্ব হ্রাস করতে পারে"
   },
   {
-   "title": "RMG unrest: Workers clash with police in Mirpur, Ashulia; 11 BGB platoons deployed in Gazipur",
-   "snippet": "Eleven platoons of Border Guard Bangladesh (BGB) remain deployed in Gazipur, while several factories in both areas have declared holidays amid the unrest.",
+   "title": "RMG workers, police clash in Mirpur, Ashulia; BGB deployed in Gazipur to foil blockade",
+   "snippet": "Mirpur-11 metro station remains temporarily closed following clashes between police and garment workers.",
    "link": "https://www.tbsnews.net/economy/rmg/rmg-unrest-continues-gazipur-ashulia-bgb-deployed-police-fire-tear-gas-1591016",
    "source": "The Business Standard",
    "published": "2026-11-03T05:00:00Z",
-   "title_bn": "",
-   "snippet_bn": ""
+   "title_bn": "আশুলিয়ার মিরপুরে আরএমজি শ্রমিকদের সঙ্গে পুলিশের সংঘর্ষ; অবরোধ বানচাল করতে গাজীপুরে বিজিবি মোতায়েন",
+   "snippet_bn": "পুলিশের সঙ্গে পোশাক শ্রমিকদের সংঘর্ষের জেরে মিরপুর-১১ মেট্রো স্টেশন সাময়িক বন্ধ রয়েছে।"
   },
   {
    "title": "Americans vote in midterms set to upend Trump presidency",
@@ -89,8 +125,8 @@
    "link": "https://en.prothomalo.com/international/americas/3vd9d6m2aq",
    "source": "Prothom Alo English",
    "published": "2026-11-03T04:56:48Z",
-   "title_bn": "",
-   "snippet_bn": ""
+   "title_bn": "আমেরিকানরা ট্রাম্পের রাষ্ট্রপতির পদ বহাল রাখতে মধ্যবর্তী নির্বাচনে ভোট দেয়",
+   "snippet_bn": "আমেরিকানরা মঙ্গলবার মধ্যবর্তী নির্বাচনে ডোনাল্ড ট্রাম্পের গোলযোগপূর্ণ দ্বিতীয় প্রেসিডেন্সির বিষয়ে তাদের রায় প্রদান করে যা ওয়াশিংটনের উপর তার দখল ভেঙে ফেলার হুমকি দেয়, ডেমোক্র্যাটরা হাউস দখল করতে এবং সেনেটের নিয়ন্ত্রণের জন্য চ্যালেঞ্জ করার জন্য প্রস্তুত।…"
   },
   {
    "title": "Delhi mosque stands amid rubble as demolition uproots hundreds of families",
@@ -98,8 +134,8 @@
    "link": "https://www.tbsnews.net/world/south-asia/delhi-mosque-stands-amid-rubble-demolition-uproots-hundreds-families-1591011",
    "source": "The Business Standard",
    "published": "2026-11-03T04:50:00Z",
-   "title_bn": "",
-   "snippet_bn": ""
+   "title_bn": "দিল্লি মসজিদ ধ্বংসস্তূপের মধ্যে দাঁড়িয়ে আছে কারণ ধ্বংসের ফলে শত শত পরিবার উপড়ে পড়েছে",
+   "snippet_bn": "মোহাম্মদ ওয়াসিম, 50, একজন ড্রাইভার, ধ্বংসস্তূপের দিকে ইঙ্গিত করেছেন যেখানে তার পরিবারের বাড়ি একসময় দাঁড়িয়ে ছিল। পাড়ার সাথে তার পরিবারের সম্পর্ক প্রজন্মের পর প্রজন্ম ধরে।"
   },
   {
    "title": "US strikes Iran’s Qeshm Island ahead of midterm elections",
@@ -107,8 +143,8 @@
    "link": "https://en.prothomalo.com/international/middle-east/vptgmydah5",
    "source": "Prothom Alo English",
    "published": "2026-11-03T04:45:11Z",
-   "title_bn": "",
-   "snippet_bn": ""
+   "title_bn": "মধ্যবর্তী নির্বাচনের আগে ইরানের কেশম দ্বীপে হামলা চালিয়েছে যুক্তরাষ্ট্র",
+   "snippet_bn": "মার্কিন যুক্তরাষ্ট্র সোমবার ইরানের কেশম দ্বীপে আক্রমণ করেছে, ওয়াল স্ট্রিট জার্নাল রিপোর্ট করেছে, এমনকি রাষ্ট্রপতি ডোনাল্ড ট্রাম্প আট মাস পুরনো সংঘাতের অবসান ঘটাতে তেহরানের সাথে আলোচনায় অগ্রগতির ইঙ্গিত দিয়েছেন। নাম প্রকাশে অনিচ্ছুক মার্কিন যুক্তরাষ্ট্রের বরাত দিয়ে জার্নাল…"
   },
   {
    "title": "Bangladesh has two decades to harness demographic dividend, says World Bank",
@@ -116,8 +152,8 @@
    "link": "https://www.tbsnews.net/economy/bangladesh-has-two-decades-harness-demographic-dividend-says-world-bank-1591001",
    "source": "The Business Standard",
    "published": "2026-11-03T04:40:00Z",
-   "title_bn": "",
-   "snippet_bn": ""
+   "title_bn": "বিশ্বব্যাংক বলছে, জনসংখ্যাগত লভ্যাংশ কাজে লাগাতে বাংলাদেশের দুই দশক সময় আছে",
+   "snippet_bn": "উইন্ডোটি ধীরে ধীরে বন্ধ হয়ে যাচ্ছে কারণ দক্ষিণ এশিয়ার কর্মজীবী ​​জনসংখ্যা এক দশকেরও কম সময়ের মধ্যে শীর্ষে এবং সঙ্কুচিত হতে শুরু করবে বলে আশা করা হচ্ছে, বিশ্বব্যাংক বলছে"
   },
   {
    "title": "Australia's under-16 social media ban faces High Court challenge",
@@ -125,8 +161,8 @@
    "link": "https://www.tbsnews.net/world/australias-under-16-social-media-ban-faces-high-court-challenge-1591006",
    "source": "The Business Standard",
    "published": "2026-11-03T04:35:00Z",
-   "title_bn": "",
-   "snippet_bn": ""
+   "title_bn": "অস্ট্রেলিয়ার অনূর্ধ্ব-১৬ সোশ্যাল মিডিয়া নিষেধাজ্ঞা হাইকোর্টে চ্যালেঞ্জের মুখে পড়েছে",
+   "snippet_bn": "নিষেধাজ্ঞা কার্যকর হওয়ার প্রথম কয়েক দিনে, মেটা, যা তিনটি সীমাবদ্ধ প্ল্যাটফর্মের মালিক, জানিয়েছে যে এটি প্রায় 500,000 অ্যাকাউন্ট বন্ধ করেছে।"
   },
   {
    "title": "Russian attack on Ukraine aid distribution centre kills at least 26",
@@ -134,8 +170,8 @@
    "link": "https://www.tbsnews.net/worldbiz/europe/russian-attack-ukraine-aid-distribution-centre-kills-least-26-1590996",
    "source": "The Business Standard",
    "published": "2026-11-03T04:35:00Z",
-   "title_bn": "",
-   "snippet_bn": ""
+   "title_bn": "ইউক্রেনের ত্রাণ বিতরণ কেন্দ্রে রাশিয়ার হামলায় অন্তত ২৬ জন নিহত হয়েছে",
+   "snippet_bn": "লক্ষ্য ছিল একটি স্থানীয় স্কুল যেখানে প্রতি সপ্তাহে বাসিন্দাদের মানবিক সরবরাহ বিতরণ করা হয়"
   },
   {
    "title": "Tk1,500cr green fund earmarked for rooftop solar financing",
@@ -143,8 +179,8 @@
    "link": "https://www.tbsnews.net/bangladesh/tk1500cr-green-fund-earmarked-rooftop-solar-financing-1590981",
    "source": "The Business Standard",
    "published": "2026-11-03T04:30:00Z",
-   "title_bn": "",
-   "snippet_bn": ""
+   "title_bn": "1,500 কোটি টাকা সবুজ তহবিল ছাদের সৌর অর্থায়নের জন্য নির্ধারিত",
+   "snippet_bn": "প্রাথমিক বরাদ্দের মধ্যে, Idcol-কে 500 কোটি টাকা প্রদান করা হয়েছে, যখন BIFFL এবং PKSF ছাদের সৌর প্রকল্পগুলিতে বিনিয়োগের সুবিধার্থে তহবিল পাবে।"
   },
   {
    "title": "How much should garment workers actually be paid?",
@@ -152,8 +188,8 @@
    "link": "https://en.prothomalo.com/opinion/2nuq171a7l",
    "source": "Prothom Alo English",
    "published": "2026-11-03T04:26:06Z",
-   "title_bn": "",
-   "snippet_bn": ""
+   "title_bn": "পোশাক শ্রমিকদের আসলে কত বেতন দেওয়া উচিত?",
+   "snippet_bn": "হাজার হাজার পোশাক শ্রমিক রাস্তায় নেমে আসে। অল্প সময়ের মধ্যেই পুলিশের সঙ্গে সংঘর্ষ এবং গাড়িতে আগুন দেওয়ার মতো ঘটনা ঘটে। শ্রমিকরা ন্যূনতম মজুরি ৩০ হাজার টাকা দাবি করছেন। কেউ কেউ বিরক্তি প্রকাশ করেছেন,…"
   },
   {
    "title": "Prothom Alo to celebrate anniversary tomorrow with a range of programmes",
@@ -161,8 +197,8 @@
    "link": "https://en.prothomalo.com/bangladesh/bqbqvl0ucc",
    "source": "Prothom Alo English",
    "published": "2026-11-03T04:09:12Z",
-   "title_bn": "",
-   "snippet_bn": ""
+   "title_bn": "প্রথম আলো আগামীকাল নানা কর্মসূচির মধ্য দিয়ে বর্ষপূর্তি উদযাপন করবে",
+   "snippet_bn": "প্রথম আলো একটি উৎসবমুখর পরিবেশ এবং বিভিন্ন কর্মকাণ্ডের মধ্য দিয়ে বর্ষপূর্তি উদযাপনের প্রস্তুতি নিচ্ছে। বিশেষ পরিপূরক, একটি পুনঃডিজাইন করা অ্যাপ, বন্ধুসভা দ্বারা সংগঠিত বিভিন্ন প্রোগ্রাম এবং একটি পুনর্মিলনের জন্য প্রস্তুতি চলছে..."
   },
   {
    "title": "Private sector credit growth stays below 5% for seventh consecutive month",
@@ -170,8 +206,8 @@
    "link": "https://www.tbsnews.net/economy/banking/private-sector-credit-growth-stays-below-5-seventh-consecutive-month-1590976",
    "source": "The Business Standard",
    "published": "2026-11-03T04:00:00Z",
-   "title_bn": "",
-   "snippet_bn": ""
+   "title_bn": "প্রাইভেট সেক্টর ক্রেডিট প্রবৃদ্ধি টানা সপ্তম মাসে 5% এর নিচে থাকে",
+   "snippet_bn": "উচ্চ ঋণের হার, জ্বালানি ঘাটতি এবং ব্যবসায়িক অবস্থার অনিশ্চয়তা বিনিয়োগকে বাধাগ্রস্ত করে চলেছে, নেতারা বলছেন"
   },
   {
    "title": "US judge dismisses Trump administration's Harvard admissions probe case",
@@ -179,7 +215,16 @@
    "link": "https://www.tbsnews.net/worldbiz/usa/us-judge-dismisses-trump-administrations-harvard-admissions-probe-case-1590971",
    "source": "The Business Standard",
    "published": "2026-11-03T03:05:00Z",
-   "title_bn": "",
+   "title_bn": "মার্কিন বিচারক ট্রাম্প প্রশাসনের হার্ভার্ড ভর্তি তদন্ত মামলা খারিজ করেছেন",
+   "snippet_bn": "গত সপ্তাহে হার্ভার্ড দ্বারা প্রকাশিত তথ্যে দেখা গেছে যে সুপ্রিম কোর্ট জাতি-সচেতন ভর্তি নিষিদ্ধ করার পর থেকে ব্ল্যাক স্নাতকদের তালিকা টানা তৃতীয় বছরে কমেছে, যা 2030 সালের ক্লাসে 11.5% থেকে 9.3%-এ নেমে এসেছে..."
+  },
+  {
+   "title": "Forgotten rice varieties make a comeback in the Sundarbans",
+   "snippet": "",
+   "link": "https://www.tbsnews.net/videos/tbs-stories/forgotten-rice-varieties-make-comeback-sundarbans-1590626",
+   "source": "The Business Standard",
+   "published": "2026-11-03T03:00:00Z",
+   "title_bn": "ভুলে যাওয়া ধানের জাত সুন্দরবনে ফিরে এসেছে",
    "snippet_bn": ""
   },
   {
@@ -188,17 +233,8 @@
    "link": "https://www.tbsnews.net/features/habitat/designing-home-functions-even-without-power-1590766",
    "source": "The Business Standard",
    "published": "2026-11-03T03:00:00Z",
-   "title_bn": "",
-   "snippet_bn": ""
-  },
-  {
-   "title": "Forgotten rice varieties make a comeback in the Sundarbans",
-   "snippet": "",
-   "link": "https://www.tbsnews.net/videos/tbs-stories/forgotten-rice-varieties-make-comeback-sundarbans-1590626",
-   "source": "The Business Standard",
-   "published": "2026-11-03T03:00:00Z",
-   "title_bn": "",
-   "snippet_bn": ""
+   "title_bn": "এমন একটি বাড়ির ডিজাইন করা যা বিদ্যুৎ ছাড়াই কাজ করে",
+   "snippet_bn": "যদিও চিন্তাশীল অভ্যন্তর নকশা সম্পূর্ণরূপে কৃত্রিম আলো, শীতল বা এয়ার কন্ডিশনার প্রতিস্থাপন করতে পারে না, তবে এটি বিদ্যুৎ কাটার সময় বাড়িগুলিকে আরও আরামদায়ক এবং কার্যকরী করে তুলতে পারে"
   },
   {
    "title": "Will the govt borrow in dollars, Yen or Yuan?",
@@ -206,8 +242,8 @@
    "link": "https://en.prothomalo.com/business/6xwoova47q",
    "source": "Prothom Alo English",
    "published": "2026-11-03T02:55:37Z",
-   "title_bn": "",
-   "snippet_bn": ""
+   "title_bn": "সরকার কি ডলার, ইয়েন বা ইউয়ানে ঋণ নেবে?",
+   "snippet_bn": "আন্তর্জাতিক মুদ্রা তহবিল (IMF) এর সাথে একটি নতুন USD 4.5 বিলিয়ন ঋণ কর্মসূচি নিয়ে আলোচনা করার সময়, সরকার বৈদেশিক মুদ্রায় ঋণ নেওয়ার বিকল্প উপায়ও অন্বেষণ করছে। এ লক্ষ্যে বাংলাদেশ সার্বভৌম ইস্যু করার প্রস্তুতি নিচ্ছে..."
   },
   {
    "title": "Bangladesh, UK express satisfaction over bilateral ties as Kobir meets Miliband",
@@ -215,8 +251,8 @@
    "link": "https://www.tbsnews.net/bangladesh/bangladesh-uk-express-satisfaction-over-bilateral-ties-kobir-meets-miliband-1590966",
    "source": "The Business Standard",
    "published": "2026-11-03T02:55:00Z",
-   "title_bn": "",
-   "snippet_bn": ""
+   "title_bn": "বাংলাদেশ, যুক্তরাজ্য দ্বিপাক্ষিক সম্পর্কের বিষয়ে সন্তুষ্টি প্রকাশ করেছে কারণ কবির মিলিব্যান্ডের সাথে দেখা করেছে",
+   "snippet_bn": "বৈঠকে উভয় মন্ত্রী বাংলাদেশ ও যুক্তরাজ্যের মধ্যে ক্রমবর্ধমান দ্বিপাক্ষিক সম্পর্কের প্রতি সন্তোষ প্রকাশ করেন, যুক্তরাজ্যের বাজারে বাংলাদেশি পণ্যের জোরালো রপ্তানি এবং বাংলাদেশে ব্রিটিশ বিনিয়োগ দ্বারা চিহ্নিত।"
   },
   {
    "title": "Investigation yet to progress after 10 and a half months, all arrested suspects out on bail",
@@ -224,8 +260,8 @@
    "link": "https://en.prothomalo.com/bangladesh/kcrpqpbl3l",
    "source": "Prothom Alo English",
    "published": "2026-11-03T02:27:56Z",
-   "title_bn": "",
-   "snippet_bn": ""
+   "title_bn": "সাড়ে ১০ মাস পেরিয়ে গেলেও তদন্তে অগ্রগতি হয়নি, গ্রেফতারকৃতরা সবাই জামিনে মুক্ত",
+   "snippet_bn": "সাড়ে ১০ মাস পেরিয়ে গেলেও প্রথম আলো কার্যালয়ে হামলা, ভাংচুর, লুটপাট ও অগ্নিসংযোগের তদন্ত শেষ করতে পারেনি ঢাকা মহানগর পুলিশের (ডিএমপি) গোয়েন্দা শাখা (ডিবি)। যারা পরিকল্পনা করেছিল তাদের পরিচয়…"
   },
   {
    "title": "Sent out to beg, yet the 4-year-old girl dreams of becoming a teacher",
@@ -233,44 +269,8 @@
    "link": "https://en.prothomalo.com/bangladesh/city/w7bsndizpo",
    "source": "Prothom Alo English",
    "published": "2026-11-03T02:27:11Z",
-   "title_bn": "",
-   "snippet_bn": ""
-  },
-  {
-   "title": "New cyberattack on supermarket fridges sweeps across Europe",
-   "snippet": "The attack, which raised temperatures in refrigerator and freezer units at dozens of stores, hit supermarket groups Ahold Delhaize and Colruyt in Belgium and Luxembourg, as well as Swedish grocers ICA and Coop. Furniture-to-meatballs…",
-   "link": "https://www.tbsnews.net/worldbiz/europe/new-cyberattack-supermarket-fridges-sweeps-across-europe-1590961",
-   "source": "The Business Standard",
-   "published": "2026-11-03T02:25:00Z",
-   "title_bn": "",
-   "snippet_bn": ""
-  },
-  {
-   "title": "US Supreme Court rejects Trump, lets California count all ballots",
-   "snippet": "The justices denied the Justice Department's emergency request just hours after it was filed, shutting down the administration's claims over disputed ballots that could have affected thousands of voters and injected uncertainty into…",
-   "link": "https://www.tbsnews.net/worldbiz/usa/us-supreme-court-rejects-trump-lets-california-count-all-ballots-1590956",
-   "source": "The Business Standard",
-   "published": "2026-11-03T02:10:00Z",
-   "title_bn": "",
-   "snippet_bn": ""
-  },
-  {
-   "title": "Tensions rise as midterm campaign ends with control of Congress at stake",
-   "snippet": "All 435 seats in the US House of Representatives and 35 of the 100 US Senate seats will be contested on Tuesday. Democrats are widely favoured to retake the House but face a greater challenge in the Senate",
-   "link": "https://www.tbsnews.net/worldbiz/usa/tensions-rise-midterm-campaign-ends-control-congress-stake-1590951",
-   "source": "The Business Standard",
-   "published": "2026-11-03T02:00:00Z",
-   "title_bn": "",
-   "snippet_bn": ""
-  },
-  {
-   "title": "Trump says he would consider pre-emptive pardons for Musk and aides",
-   "snippet": "Speaking in an interview on the Pod Force One podcast hosted by Miranda Devine, Trump was asked about reports that Democrats could investigate Musk and seek to seize his assets",
-   "link": "https://www.tbsnews.net/worldbiz/usa/trump-says-he-would-consider-pre-emptive-pardons-musk-and-aides-1590946",
-   "source": "The Business Standard",
-   "published": "2026-11-03T01:55:00Z",
-   "title_bn": "",
-   "snippet_bn": ""
+   "title_bn": "ভিক্ষা করতে পাঠানো, তবুও 4 বছরের মেয়েটি শিক্ষক হওয়ার স্বপ্ন দেখে",
+   "snippet_bn": "পারভিন ঢাকার বাহাদুর শাহ পার্কের এক কোণে আবর্জনা ও ফেলে দেওয়া জিনিসপত্র নিয়ে খেলছিল। তার বয়স মাত্র চার বছর। যে বয়সে একটি শিশু একটি নিরাপদ পরিবেশে বেড়ে উঠা উচিত, তার দিনগুলি এক কোণে কাটায়..."
   }
  ]
 }
