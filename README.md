@@ -22,7 +22,7 @@ It writes every `*/index.html`, `sitemap.xml`, `robots.txt`, `manifest.json` and
 | `data/districts.js` | 64 districts lat/lon for prayer times | nuhil/bangladesh-geocode |
 
 ## News page (`/news/`)
-`.github/workflows/news.yml` runs `scripts/fetch_news.py` every 2 hours (and on manual dispatch). It fetches English RSS feeds (list `FEEDS` in the script — currently The Business Standard top news and Prothom Alo English), translates **only new items** to Bangla with the free keyless `translate.googleapis.com/translate_a/single?client=gtx` endpoint (1.5 s delay between calls, retries, cache by link), and commits `news.json` with `title_bn` / `snippet_bn` next to the originals. If translation fails the Bangla fields stay empty, the page shows the original, and the item is retried on the next run.
+`.github/workflows/news.yml` runs `scripts/fetch_news.py` every 2 hours (and on manual dispatch). It fetches English RSS feeds (list `FEEDS` in the script — currently The Business Standard top news and Prothom Alo English), translates **only new items** to Bangla (cache by link) with free keyless endpoints tried in order: `translate.googleapis.com/translate_a/single?client=gtx` (batched POST), then `clients5.google.com` dict-chrome-ex, then MyMemory — batched, 1.5 s+ back-off, a provider is skipped after 2 failures, and commits `news.json` with `title_bn` / `snippet_bn` next to the originals. If translation fails the Bangla fields stay empty, the page shows the original, and the item is retried on the next run.
 
 ## AdSense
 - Publisher `ca-pub-6277863204170835`; the `adsbygoogle.js` tag is in every page `<head>` (Auto ads).
