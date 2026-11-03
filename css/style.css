@@ -74,3 +74,6 @@ canvas.preview{max-width:100%;border:1px dashed var(--b);border-radius:10px;back
 .news-promo{display:block;margin:.2rem 0 .8rem;padding:.6rem .9rem;border-radius:12px;background:#f1edff;color:#4b32c3;text-decoration:none;font-weight:600}
 .brand span{white-space:nowrap}
 @media (max-width:420px){.hdr-link{padding:.3rem .28rem;font-size:.84rem}.brand span{font-size:1rem}.brand svg{width:30px;height:30px}}
+.post-body h2{margin-top:1.3rem}.post-body .tbl{overflow-x:auto}.post-body ol.sources{font-size:.9rem;word-break:break-word}
+.post-body code{background:#f1edff;padding:.05rem .3rem;border-radius:5px}.post-body pre{background:#f4f5fa;padding:.7rem;border-radius:10px;overflow:auto}
+.card.post h3{line-height:1.45}

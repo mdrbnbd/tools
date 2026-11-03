@@ -3,6 +3,7 @@
 import os, html, json, datetime, re
 from tools_def import CATS, TOOLS, SITES
 from tutorials_def import GUIDES, ARTICLES
+import posts as P
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = 'https://dfaster.com/tools/'
 ADS = 'ca-pub-6277863204170835'
@@ -12,6 +13,12 @@ LOGO = '<svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg
 CATMAP = {c[0]: c for c in CATS}
 TOOLMAP = {t['slug']: t for t in TOOLS}
 e = html.escape
+BN_D = str.maketrans('0123456789', '০১২৩৪৫৬৭৮৯')
+BN_M = ['জানুয়ারি', 'ফেব্রুয়ারি', 'মার্চ', 'এপ্রিল', 'মে', 'জুন', 'জুলাই', 'আগস্ট', 'সেপ্টেম্বর', 'অক্টোবর', 'নভেম্বর', 'ডিসেম্বর']
+def bn_date(d):
+    d = datetime.datetime.fromisoformat(str(d).replace('Z', '+00:00'))
+    return f'{str(d.day).translate(BN_D)} {BN_M[d.month-1]} {str(d.year).translate(BN_D)}'
+POSTS = P.load_all({t['slug'] for t in TOOLS})
 
 def page(path, title, desc, body, crumbs=None, scripts=(), og_type='website', extra_head=''):
     depth = path.count('/')
@@ -43,7 +50,7 @@ def page(path, title, desc, body, crumbs=None, scripts=(), og_type='website', ex
 <div class="wrap"><div class="ad-slot" data-slot="top"></div></div>
 <main id="main" class="wrap">{cr}{body}</main>
 <div class="wrap"><div class="ad-slot" data-slot="bottom"></div></div>
-<footer class="foot"><div class="wrap"><nav><a href="{pre}" data-en="Home">হোম</a><a href="{pre}tutorials/" data-en="Tutorials">টিউটোরিয়াল</a><a href="{pre}news/" data-en="News">খবর</a><a href="{pre}about/" data-en="About">আমাদের সম্পর্কে</a><a href="{pre}privacy/" data-en="Privacy Policy">গোপনীয়তা নীতি</a><a href="{pre}contact/" data-en="Contact">যোগাযোগ</a><a href="https://dfaster.com/">dfaster.com</a></nav>
+<footer class="foot"><div class="wrap"><nav><a href="{pre}" data-en="Home">হোম</a><a href="{pre}tutorials/" data-en="Tutorials">টিউটোরিয়াল</a><a href="{pre}news/" data-en="Tech news">টেক খবর</a><a href="{pre}about/" data-en="About">আমাদের সম্পর্কে</a><a href="{pre}privacy/" data-en="Privacy Policy">গোপনীয়তা নীতি</a><a href="{pre}contact/" data-en="Contact">যোগাযোগ</a><a href="https://dfaster.com/">dfaster.com</a></nav>
 <div>© <span data-year></span> dFaster Tools · <span class="made"><a href="https://wa.me/8801766119905" target="_blank" rel="noopener">Made by Robin</a></span></div></div></footer>
 <script src="{pre}js/ads-config.js"></script><script src="{pre}js/common.js"></script>{sc}
 </body></html>
@@ -58,6 +65,47 @@ def card(href, icon, title, desc, en=None, den=None, extra='', cls='card'):
     a = f' data-en="{e(en)}"' if en else ''
     b = f' data-en="{e(den)}"' if den else ''
     return f'<a class="{cls}" href="{href}"{extra}><div class="ic">{icon}</div><h3{a}>{e(title)}</h3><p{b}>{e(desc)}</p></a>'
+
+def post_card(p, pre):
+    return (f'<a class="card post" href="{pre}posts/{p["slug"]}/"><div class="ic">{p.get("cover_emoji","📝")}</div><h3>{e(p["title"])}</h3>'
+            f'<p>{e(p["description"])}</p><p class="small muted" style="margin-top:.35rem">{bn_date(p["date"])}</p></a>')
+
+def latest_posts():
+    if not POSTS: return ''
+    cards = ''.join(post_card(p, '') for p in POSTS[:4])
+    return (f'<section class="latest-posts" style="margin-top:1.6rem"><h2 class="cat-title">📝 <span data-en="Latest posts">সর্বশেষ পোস্ট</span></h2>'
+            f'<div class="grid">{cards}</div><p style="margin:.6rem 0 0"><a href="posts/" data-en="All posts →">সব পোস্ট →</a></p></section>')
+
+def posts_pages():
+    idx = []
+    for p in POSTS:
+        url = f'posts/{p["slug"]}/'
+        body_html = p.get('body_html') or P.md(p['body_md'])
+        src = ''.join(f'<li><a href="{e(x["url"])}" target="_blank" rel="noopener">{e(x["title"])}</a>' + (f' <span class="muted small">({e(x["note"])})</span>' if x.get('note') else '') + '</li>' for x in p['sources'])
+        rel = ''.join(card(f'../../{t}/', TOOLMAP[t]['icon'], TOOLMAP[t]['bn'], TOOLMAP[t]['desc'], TOOLMAP[t]['en'], TOOLMAP[t]['den']) for t in p.get('related_tools', []) or [])
+        tags = ''.join(f'<span class="pill">{e(t)}</span>' for t in p.get('tags', []) or [])
+        upd = f' · হালনাগাদ {bn_date(p["updated"])}' if p.get('updated') else ''
+        ld = json.dumps({'@context': 'https://schema.org', '@type': 'BlogPosting', 'headline': p['title'], 'description': p['description'],
+                         'datePublished': str(p['date']), 'dateModified': str(p.get('updated') or p['date']), 'inLanguage': p.get('lang', 'bn'),
+                         'author': {'@type': 'Person', 'name': p.get('author', 'Robin'), 'url': 'https://dfaster.com/'},
+                         'publisher': {'@type': 'Organization', 'name': 'dFaster Tools', 'logo': {'@type': 'ImageObject', 'url': BASE + 'icons/icon-512.png'}},
+                         'mainEntityOfPage': BASE + url}, ensure_ascii=False).replace('</', '<\\/')
+        body = (f'<article class="prose post-body"><h1>{p.get("cover_emoji","📝")} {e(p["title"])}</h1>'
+                f'<p class="muted small">✍️ {e(p.get("author","Robin"))} · {bn_date(p["date"])}{upd} {tags}</p>{body_html}'
+                f'<h2>তথ্যসূত্র</h2><ol class="sources">{src}</ol>'
+                '<div class="note small">এই লেখা সাধারণ তথ্যের জন্য। নিয়ম বদলাতে পারে — চূড়ান্ত সিদ্ধান্তের আগে তথ্যসূত্রের মূল পাতা দেখে নিন।</div></article>'
+                + (f'<h2>সংশ্লিষ্ট টুল</h2><div class="grid">{rel}</div>' if rel else '')
+                + '<p style="margin-top:1rem"><a href="../">← সব পোস্ট</a></p>')
+        page(url, p['title'], p['description'], body, crumbs=[('হোম', ''), ('পোস্ট', 'posts/'), (p['title'][:40] + ('…' if len(p['title']) > 40 else ''), None)],
+             og_type='article', extra_head=f'<meta property="article:published_time" content="{e(str(p["date"]))}"><script type="application/ld+json">{ld}</script>\n')
+        idx.append(dict(slug=p['slug'], title=p['title'], description=p['description'], date=str(p['date']), updated=str(p.get('updated') or ''),
+                        tags=p.get('tags', []), cover_emoji=p.get('cover_emoji', '📝'), url=BASE + url))
+    cards = ''.join(post_card(p, '../') for p in POSTS) or '<p class="muted">এখনও কোনো পোস্ট নেই।</p>'
+    page('posts/', 'পোস্ট — বাংলায় টিউটোরিয়াল ও গাইড', 'আয়কর, বিদ্যুৎ বিল, মোবাইল ব্যাংকিং, অনলাইন আবেদনসহ দরকারি বিষয়ে বাংলায় ধাপে ধাপে লেখা ও গাইড।',
+         f'<h1>📝 <span data-en="Posts">পোস্ট</span></h1><p class="muted">দরকারি বিষয়ে বাংলায় ধাপে ধাপে লেখা — তথ্যসূত্রসহ।</p><div class="grid">{cards}</div>', crumbs=[('হোম', ''), ('পোস্ট', None)])
+    os.makedirs(os.path.join(ROOT, 'posts'), exist_ok=True)
+    json.dump(dict(updated=max([x['updated'] or x['date'] for x in idx], default=''), count=len(idx), posts=idx),
+              open(os.path.join(ROOT, 'posts', 'index.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 
 # ---------- home ----------
 def home():
@@ -76,9 +124,9 @@ def home():
     body = f'''<section class="hero"><h1 data-en="Free Bangla tools for everyday life">প্রতিদিনের কাজের ফ্রি বাংলা টুলস</h1>
 <p data-en="Electricity bill, tax, zakat, photo resize, Bijoy-Unicode, prayer times and more — fast, free and works offline.">বিদ্যুৎ বিল, আয়কর, জাকাত, ছবি রিসাইজ, বিজয়-ইউনিকোড, নামাজের সময়সহ {str(len(TOOLS)).translate(str.maketrans('0123456789','০১২৩৪৫৬৭৮৯'))}টি টুল — দ্রুত, ফ্রি, অফলাইনেও চলে।</p>
 <div class="search"><input id="q" type="search" placeholder="টুল খুঁজুন… যেমন বিল, জমি, ছবি" data-en-ph="Search tools… e.g. bill, land, photo" aria-label="টুল খুঁজুন"></div></section>
-<a class="news-promo" href="news/">📰 <span data-en="Latest news (English sources, shown in Bangla)">আজকের খবর — বাংলায় পড়ুন</span> →</a>
+<a class="news-promo" href="news/">📰 <span data-en="Tech news — last 24 h, in Bangla">প্রযুক্তি খবর — গত ২৪ ঘণ্টা, বাংলায়</span> →</a>
 <div class="chips" id="chips" role="tablist">{chips}</div><div id="all">{secs}</div><p class="empty" id="empty" data-en="No tool found.">কোনো টুল পাওয়া যায়নি।</p>
-<section class="sites" style="margin-top:1.6rem"><h2 class="cat-title">🌐 <span data-en="Our other sites">আমাদের অন্যান্য সাইট</span></h2><div class="grid">{sites}</div></section>
+{latest_posts()}<section class="sites" style="margin-top:1.6rem"><h2 class="cat-title">🌐 <span data-en="Our other sites">আমাদের অন্যান্য সাইট</span></h2><div class="grid">{sites}</div></section>
 <script>document.addEventListener('DOMContentLoaded',function(){{var D=DFT,cat='all';function f(){{var q=D.toEn(D.$('#q').value.trim().toLowerCase()),n=0;D.$$('.cat').forEach(function(s){{var vis=0;D.$$('.card',s).forEach(function(c){{var ok=(!q||D.toEn((c.dataset.k||c.textContent).toLowerCase()).indexOf(q)>=0);c.hidden=!ok;if(ok)vis++}});s.hidden=!(vis&&(cat==='all'||s.dataset.cat===cat));if(!s.hidden)n+=vis}});D.$('#empty').style.display=n?'none':'block'}}
 D.$$('#chips .chip').forEach(function(b){{b.addEventListener('click',function(){{cat=b.dataset.cat;D.$$('#chips .chip').forEach(function(x){{x.classList.toggle('on',x===b)}});f()}})}});D.$('#q').addEventListener('input',f);var h=location.hash.match(/^#cat-(\\w+)/);if(h){{var b=D.$('#chips [data-cat="'+h[1]+'"]');if(b)b.click()}}}});</script>'''
     page('', 'dFaster Tools — প্রতিদিনের কাজের ফ্রি বাংলা অনলাইন টুলস', 'বিদ্যুৎ বিল, আয়কর, জাকাত, বয়স, বিকাশ চার্জ, জমির মাপ, ছবি রিসাইজ, বিজয়-ইউনিকোড, টাইপিং টেস্ট, মোবাইল প্যাকেজ, GPA ও নামাজের সময় — সব ফ্রি বাংলা টুল এক জায়গায়।', body)
@@ -136,12 +184,13 @@ def static_pages():
 <div class="note">কোনো রেট বা হার পুরোনো মনে হলে উৎসের লিংকসহ জানালে দ্রুত ঠিক করে দেওয়া হবে।</div></article>''', crumbs=[('হোম', ''), ('যোগাযোগ', None)])
 
 def news():
-    body = """<h1>📰 <span data-en="Latest news">আজকের খবর</span></h1>
-<p class="muted" data-en="Headlines from English-language Bangladeshi news sites, updated every 2 hours. In Bangla mode they are shown machine-translated.">ইংরেজি ভাষার বাংলাদেশি সংবাদমাধ্যমের শিরোনাম, প্রতি ২ ঘণ্টায় হালনাগাদ। বাংলা মোডে স্বয়ংক্রিয় অনুবাদে দেখানো হয় — পুরো খবর পড়তে শিরোনামে চাপুন।</p>
-<div class="news-ctl" id="newsCtl"><span class="small muted">অনুবাদে ভুল থাকতে পারে।</span><button type="button" class="btn sm ghost" id="origAll" aria-pressed="false">মূল ইংরেজি দেখুন</button></div>
+    body = """<h1>📰 <span data-en="Tech news — last 24 hours">প্রযুক্তি খবর — গত ২৪ ঘণ্টা</span></h1>
+<p class="muted" data-en="Latest technology headlines from The Verge, TechCrunch, Ars Technica, Engadget, Wired, Google News and Bangla tech sites, refreshed every 20 minutes. English stories are machine-translated in Bangla mode.">The Verge, TechCrunch, Ars Technica, Engadget, Wired, Google News ও বাংলা প্রযুক্তি সাইটের সর্বশেষ প্রযুক্তি খবর — প্রতি ২০ মিনিটে হালনাগাদ। বাংলা মোডে ইংরেজি খবর স্বয়ংক্রিয় অনুবাদে দেখানো হয়; পুরো খবর পড়তে শিরোনামে চাপুন।</p>
+<div class="chips" id="newsFilt"><button class="chip on" data-f="all" data-en="All">সব</button><button class="chip" data-f="en" data-en="English sources">ইংরেজি উৎস</button><button class="chip" data-f="bn" data-en="Bangla sources">বাংলা উৎস</button></div>
+<div class="news-ctl" id="newsCtl"><span class="small muted"><span id="newsCount"></span> · অনুবাদে ভুল থাকতে পারে।</span><button type="button" class="btn sm ghost" id="origAll" aria-pressed="false">মূল ইংরেজি দেখুন</button></div>
 <div id="newsList"><p class="muted">লোড হচ্ছে…</p></div><p class="small muted" id="newsSrc"></p>"""
-    page('news/', 'আজকের খবর — বাংলায়', 'বাংলাদেশের ইংরেজি সংবাদমাধ্যমের সর্বশেষ শিরোনাম বাংলায় পড়ুন, মূল ইংরেজিও দেখা যায়। প্রতি ২ ঘণ্টায় হালনাগাদ।', body,
-         crumbs=[('হোম', ''), ('খবর', None)], scripts=['js/tools/news.js'])
+    page('news/', 'প্রযুক্তি খবর বাংলায় — গত ২৪ ঘণ্টা', 'The Verge, TechCrunch, Ars Technica, Engadget, Wired ও বাংলা প্রযুক্তি সাইটের সর্বশেষ টেক নিউজ বাংলায় পড়ুন, মূল ইংরেজিও দেখা যায়। প্রতি ২০ মিনিটে হালনাগাদ।', body,
+         crumbs=[('হোম', ''), ('প্রযুক্তি খবর', None)], scripts=['js/tools/news.js'])
 
 def extras():
     # 404 (GitHub Pages uses repo-level 404 only for the user site; keep for local + /tools/ deep links)
@@ -168,10 +217,10 @@ self.addEventListener('install',e=>{{e.waitUntil(caches.open(CACHE).then(c=>c.ad
 self.addEventListener('activate',e=>{{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k.startsWith('dft-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))}});
 self.addEventListener('fetch',e=>{{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==location.origin)return;
  if(e.request.mode==='navigate'){{e.respondWith(fetch(e.request).then(r=>{{const c=r.clone();caches.open(CACHE).then(x=>x.put(e.request,c));return r}}).catch(()=>caches.match(e.request,{{ignoreSearch:true}}).then(r=>r||caches.match('./'))));return}}
- if(u.pathname.endsWith('/news.json')){{e.respondWith(fetch(e.request).then(r=>{{const c=r.clone();caches.open(CACHE).then(x=>x.put(e.request,c));return r}}).catch(()=>caches.match(e.request,{{ignoreSearch:true}})));return}}
+ if(u.pathname.endsWith('/news.json')||u.pathname.endsWith('/posts/index.json')){{e.respondWith(fetch(e.request).then(r=>{{const c=r.clone();caches.open(CACHE).then(x=>x.put(e.request,c));return r}}).catch(()=>caches.match(e.request,{{ignoreSearch:true}})));return}}
  e.respondWith(caches.match(e.request,{{ignoreSearch:true}}).then(r=>r||fetch(e.request).then(n=>{{const c=n.clone();caches.open(CACHE).then(x=>x.put(e.request,c));return n}})))}});
 '''
     open(os.path.join(ROOT, 'sw.js'), 'w').write(sw)
     print('pages', len(PAGES), 'precache', len(pre))
 
-home(); news(); tool_pages(); tutorials(); static_pages(); extras()
+home(); news(); posts_pages(); tool_pages(); tutorials(); static_pages(); extras()
